@@ -7,7 +7,6 @@ variable "vpc_private_subnets" {
   default = ["10.10.11.0/24", "10.10.12.0/24", "10.10.13.0/24"]
 }
 
-
 module "cgw" {
   source = "../../"
 
@@ -33,7 +32,7 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 2.0"
 
-  name = "complete-vpn-gateway"
+  name = "complete"
 
   cidr = "10.10.0.0/16"
 
@@ -44,8 +43,8 @@ module "vpc" {
   enable_vpn_gateway = true
 
   tags = {
-    Owner       = "user"
-    Name        = "complete"
+    Owner = "user"
+    Name  = "complete"
   }
 }
 

@@ -2,6 +2,8 @@
 
 Terraform module which creates AWS Customer Gateway resources on AWS.
 
+This module has been extracted from the [VPC](https://github.com/terraform-aws-modules/terraform-aws-vpc) module, because sometimes it makes sense to reuse Customer Gateways across multiple VPC resources. Check out other related modules - [VPC](https://github.com/terraform-aws-modules/terraform-aws-vpc), [VPN Gateway](https://github.com/terraform-aws-modules/terraform-aws-vpn-gateway) and [Transit Gateway](https://github.com/terraform-aws-modules/terraform-aws-transit-gateway) for more details.
+
 These types of resources are supported:
 
 * [Customer Gateway](https://www.terraform.io/docs/providers/aws/r/customer_gateway.html)
@@ -34,7 +36,7 @@ module "cgw" {
 
 ## Examples
 
-* [Complete example](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/tree/master/examples/complete) creates 2 Customer Gateways, a VPC and 2 VPN connections
+* [Complete example](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/tree/master/examples/complete) creates 2 Customer Gateways, a VPC and creates 2 VPN connections between them.
 
 ## Conditional creation
 
@@ -56,7 +58,7 @@ module "cgw" {
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| aws | ~> 2.23 |
 
 ## Inputs
 

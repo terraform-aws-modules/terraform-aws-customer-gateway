@@ -1,6 +1,85 @@
-# terraform-aws-customer-gateway
-Terraform module which creates Customer Gateway and other resources necessary to configure a VPN Connection on AWS
+# AWS Customer Gateway Terraform module
 
-**WORK IN PROGRESS**
+Terraform module which creates AWS Customer Gateway resources on AWS.
 
-**WORK IN PROGRESS**
+These types of resources are supported:
+
+* [Customer Gateway](https://www.terraform.io/docs/providers/aws/r/customer_gateway.html)
+
+## Usage
+
+```hcl
+module "cgw" {
+  source  = "terraform-aws-modules/customer-gateway/aws"
+  version = "~> 1.0"
+
+  name = "test-cgw"
+
+  customer_gateways = {
+    IP1 = {
+      bgp_asn    = 65112
+      ip_address = "49.33.1.162"
+    },
+    IP2 = {
+      bgp_asn    = 65112
+      ip_address = "85.38.42.93"
+    }
+  }
+
+  tags = {
+    Test = "maybe"
+  }
+}
+```
+
+## Examples
+
+* [Complete example](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/tree/master/examples/complete) creates 2 Customer Gateways, a VPC and 2 VPN connections
+
+## Conditional creation
+
+Sometimes you need to have a way to create Customer Gateway conditionally but Terraform does not allow to use `count` inside `module` block, so the solution is to specify argument `create`.
+
+```hcl
+# This CGW will not be created
+module "cgw" {
+  source  = "terraform-aws-modules/customer-gateway/aws"
+  version = "~> 1.0"
+
+  create = false
+  # ... omitted
+}
+```
+
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:-----:|
+| create | Whether to create Customer Gateway resources | `bool` | `true` | no |
+| customer\_gateways | Maps of Customer Gateway's attributes (BGP ASN and Gateway's Internet-routable external IP address) | `map(map(any))` | `{}` | no |
+| name | Name to be used on all the resources as identifier | `string` | `""` | no |
+| tags | A mapping of tags to assign to all resources | `map(string)` | `{}` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| cgw\_ids | List of IDs of Customer Gateway |
+| this\_customer\_gateway | Map of Customer Gateway attributes |
+
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+## Authors
+
+Module managed by [Anton Babenko](https://github.com/antonbabenko).
+
+## License
+
+Apache 2 Licensed. See LICENSE for full details.

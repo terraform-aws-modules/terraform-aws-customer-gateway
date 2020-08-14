@@ -54,16 +54,23 @@ module "cgw" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | >= 0.12.6, < 0.14 |
+| aws | >= 2.23, < 4.0 |
+
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | ~> 2.23 |
+| aws | >= 2.23, < 4.0 |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
 | create | Whether to create Customer Gateway resources | `bool` | `true` | no |
 | customer\_gateways | Maps of Customer Gateway's attributes (BGP ASN and Gateway's Internet-routable external IP address) | `map(map(any))` | `{}` | no |
 | name | Name to be used on all the resources as identifier | `string` | `""` | no |

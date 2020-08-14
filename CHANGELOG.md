@@ -1,6 +1,16 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+
 <a name="unreleased"></a>
 ## [Unreleased]
 
+
+
+<a name="v1.1.0"></a>
+## [v1.1.0] - 2020-08-14
+
+- feat: Updated version requirements for AWS provider v3 and Terraform 0.13
 
 
 <a name="v1.0.0"></a>
@@ -18,5 +28,6 @@
 - Initial commit
 
 
-[Unreleased]: https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/compare/v1.1.0...HEAD
+[v1.1.0]: https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/compare/v1.0.0...v1.1.0
 [v1.0.0]: https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/compare/v0.0.1...v1.0.0

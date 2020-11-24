@@ -2,11 +2,6 @@ provider "aws" {
   region = "eu-west-1"
 }
 
-variable "vpc_private_subnets" {
-  type    = list(string)
-  default = ["10.10.11.0/24", "10.10.12.0/24", "10.10.13.0/24"]
-}
-
 module "cgw" {
   source = "../../"
 
@@ -70,4 +65,11 @@ module "vpn_gateway_2" {
   vpc_id                       = module.vpc.vpc_id
   vpc_subnet_route_table_ids   = module.vpc.private_route_table_ids
   vpc_subnet_route_table_count = length(var.vpc_private_subnets)
+}
+
+# Disabled CGW
+module "disabled_cgw" {
+  source = "../../"
+
+  create = false
 }

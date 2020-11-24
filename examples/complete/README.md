@@ -17,7 +17,10 @@ Note that this example may create resources which cost money. Run `terraform des
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| terraform | >= 0.12.6 |
+| aws | >= 2.23 |
 
 ## Providers
 
@@ -27,7 +30,7 @@ No provider.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| vpc\_private\_subnets | n/a | `list(string)` | <pre>[<br>  "10.10.11.0/24",<br>  "10.10.12.0/24",<br>  "10.10.13.0/24"<br>]</pre> | no |
+| vpc\_private\_subnets | List of CIDR blocks of private subnets | `list(string)` | <pre>[<br>  "10.10.11.0/24",<br>  "10.10.12.0/24",<br>  "10.10.13.0/24"<br>]</pre> | no |
 
 ## Outputs
 

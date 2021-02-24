@@ -58,7 +58,7 @@ module "cgw" {
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12.6 |
+| terraform | >= 0.12.26 |
 | aws | >= 2.23 |
 
 ## Providers

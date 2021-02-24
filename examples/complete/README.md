@@ -26,6 +26,20 @@ Note that this example may create resources which cost money. Run `terraform des
 
 No provider.
 
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| cgw | ../../ |  |
+| disabled_cgw | ../../ |  |
+| vpc | terraform-aws-modules/vpc/aws | ~> 2.0 |
+| vpn_gateway_1 | terraform-aws-modules/vpn-gateway/aws | ~> 2.0 |
+| vpn_gateway_2 | terraform-aws-modules/vpn-gateway/aws | ~> 2.0 |
+
+## Resources
+
+No resources.
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -38,5 +52,4 @@ No provider.
 |------|-------------|
 | cgw\_cgw\_ids | List of IDs of Customer Gateway |
 | cgw\_this\_customer\_gateway | Map of Customer Gateway attributes |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

@@ -67,6 +67,16 @@ module "cgw" {
 |------|---------|
 | aws | >= 2.23 |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_customer_gateway](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/customer_gateway) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -82,7 +92,6 @@ module "cgw" {
 |------|-------------|
 | cgw\_ids | List of IDs of Customer Gateway |
 | this\_customer\_gateway | Map of Customer Gateway attributes |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Authors

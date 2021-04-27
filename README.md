@@ -58,40 +58,40 @@ module "cgw" {
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12.26 |
-| aws | >= 2.23 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.26 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 2.23 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | >= 2.23 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 2.23 |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [aws_customer_gateway](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/customer_gateway) |
+| Name | Type |
+|------|------|
+| [aws_customer_gateway.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/customer_gateway) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| create | Whether to create Customer Gateway resources | `bool` | `true` | no |
-| customer\_gateways | Maps of Customer Gateway's attributes (BGP ASN and Gateway's Internet-routable external IP address) | `map(map(any))` | `{}` | no |
-| name | Name to be used on all the resources as identifier | `string` | `""` | no |
-| tags | A mapping of tags to assign to all resources | `map(string)` | `{}` | no |
+| <a name="input_create"></a> [create](#input\_create) | Whether to create Customer Gateway resources | `bool` | `true` | no |
+| <a name="input_customer_gateways"></a> [customer\_gateways](#input\_customer\_gateways) | Maps of Customer Gateway's attributes (BGP ASN and Gateway's Internet-routable external IP address) | `map(map(any))` | `{}` | no |
+| <a name="input_name"></a> [name](#input\_name) | Name to be used on all the resources as identifier | `string` | `""` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | A mapping of tags to assign to all resources | `map(string)` | `{}` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| cgw\_ids | List of IDs of Customer Gateway |
-| this\_customer\_gateway | Map of Customer Gateway attributes |
+| <a name="output_customer_gateway"></a> [customer\_gateway](#output\_customer\_gateway) | Map of Customer Gateway attributes |
+| <a name="output_ids"></a> [ids](#output\_ids) | List of IDs of Customer Gateway |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Authors

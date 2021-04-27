@@ -1,9 +1,9 @@
-output "cgw_cgw_ids" {
+output "ids" {
   description = "List of IDs of Customer Gateway"
-  value       = module.cgw.cgw_ids
+  value       = module.cgw.ids
 }
 
-output "cgw_this_customer_gateway" {
+output "customer_gateway" {
   description = "Map of Customer Gateway attributes"
-  value       = module.cgw.this_customer_gateway
+  value       = module.cgw.customer_gateway
 }

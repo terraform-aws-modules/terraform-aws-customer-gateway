@@ -32,7 +32,7 @@ No providers.
 |------|--------|---------|
 | <a name="module_cgw"></a> [cgw](#module\_cgw) | ../../ |  |
 | <a name="module_disabled_cgw"></a> [disabled\_cgw](#module\_disabled\_cgw) | ../../ |  |
-| <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | ~> 2.0 |
+| <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | ~> 3.0 |
 | <a name="module_vpn_gateway_1"></a> [vpn\_gateway\_1](#module\_vpn\_gateway\_1) | terraform-aws-modules/vpn-gateway/aws | ~> 2.0 |
 | <a name="module_vpn_gateway_2"></a> [vpn\_gateway\_2](#module\_vpn\_gateway\_2) | terraform-aws-modules/vpn-gateway/aws | ~> 2.0 |
 
@@ -50,6 +50,6 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_cgw_cgw_ids"></a> [cgw\_cgw\_ids](#output\_cgw\_cgw\_ids) | List of IDs of Customer Gateway |
-| <a name="output_cgw_this_customer_gateway"></a> [cgw\_this\_customer\_gateway](#output\_cgw\_this\_customer\_gateway) | Map of Customer Gateway attributes |
+| <a name="output_customer_gateway"></a> [customer\_gateway](#output\_customer\_gateway) | Map of Customer Gateway attributes |
+| <a name="output_ids"></a> [ids](#output\_ids) | List of IDs of Customer Gateway |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

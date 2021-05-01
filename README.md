@@ -4,10 +4,6 @@ Terraform module which creates AWS Customer Gateway resources on AWS.
 
 This module has been extracted from the [VPC](https://github.com/terraform-aws-modules/terraform-aws-vpc) module, because sometimes it makes sense to reuse Customer Gateways across multiple VPC resources. Check out other related modules - [VPC](https://github.com/terraform-aws-modules/terraform-aws-vpc), [VPN Gateway](https://github.com/terraform-aws-modules/terraform-aws-vpn-gateway) and [Transit Gateway](https://github.com/terraform-aws-modules/terraform-aws-transit-gateway) for more details.
 
-These types of resources are supported:
-
-* [Customer Gateway](https://www.terraform.io/docs/providers/aws/r/customer_gateway.html)
-
 ## Usage
 
 ```hcl
@@ -36,7 +32,7 @@ module "cgw" {
 
 ## Examples
 
-* [Complete example](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/tree/master/examples/complete) creates 2 Customer Gateways, a VPC and creates 2 VPN connections between them.
+- [Complete example](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/tree/master/examples/complete) creates 2 Customer Gateways, a VPC and creates 2 VPN connections between them.
 
 ## Conditional creation
 
@@ -96,8 +92,8 @@ No modules.
 
 ## Authors
 
-Module managed by [Anton Babenko](https://github.com/antonbabenko).
+Module is maintained by [Anton Babenko](https://github.com/antonbabenko) with help from [these awesome contributors](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/graphs/contributors).
 
 ## License
 
-Apache 2 Licensed. See LICENSE for full details.
+Apache 2 Licensed. See [LICENSE](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/tree/master/LICENSE) for full details.

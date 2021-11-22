@@ -30,8 +30,8 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_cgw"></a> [cgw](#module\_cgw) | ../../ |  |
-| <a name="module_disabled_cgw"></a> [disabled\_cgw](#module\_disabled\_cgw) | ../../ |  |
+| <a name="module_cgw"></a> [cgw](#module\_cgw) | ../../ | n/a |
+| <a name="module_disabled_cgw"></a> [disabled\_cgw](#module\_disabled\_cgw) | ../../ | n/a |
 | <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | ~> 3.0 |
 | <a name="module_vpn_gateway_1"></a> [vpn\_gateway\_1](#module\_vpn\_gateway\_1) | terraform-aws-modules/vpn-gateway/aws | ~> 2.0 |
 | <a name="module_vpn_gateway_2"></a> [vpn\_gateway\_2](#module\_vpn\_gateway\_2) | terraform-aws-modules/vpn-gateway/aws | ~> 2.0 |

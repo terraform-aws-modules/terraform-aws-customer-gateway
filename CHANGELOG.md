@@ -1,3 +1,14 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+### [2.0.1](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/compare/v2.0.0...v2.0.1) (2022-01-10)
+
+
+### Bug Fixes
+
+* update CI/CD process to enable auto-release workflow ([#16](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/issues/16)) ([a2e806f](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/commit/a2e806f4bc64fd1af15351e645b02a1dff280ca4))
+
 <a name="v2.0.0"></a>
 ## [v2.0.0] - 2021-04-27
 

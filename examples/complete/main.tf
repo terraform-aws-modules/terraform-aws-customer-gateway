@@ -15,6 +15,7 @@ module "cgw" {
     IP2 = {
       bgp_asn    = 65112
       ip_address = "85.38.42.93"
+      device_name = "something"
     }
   }
 

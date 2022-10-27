@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.0](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/compare/v2.0.1...v3.0.0) (2022-10-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update supported Terraform min version to v1.0+ and AWS provider to v4.0+ (#20)
+
+### Features
+
+* Update supported Terraform min version to v1.0+ and AWS provider to v4.0+ ([#20](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/issues/20)) ([eb5d882](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/commit/eb5d8823dcc2c87181bcc0d885619aba10d77058))
+
 ### [2.0.1](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/compare/v2.0.0...v2.0.1) (2022-01-10)
 
 

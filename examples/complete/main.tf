@@ -25,10 +25,9 @@ module "cgw" {
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "~> 3.0"
+  version = "~> 5.0"
 
   name = "complete"
-
   cidr = "10.10.0.0/16"
 
   azs             = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
@@ -45,7 +44,7 @@ module "vpc" {
 
 module "vpn_gateway_1" {
   source  = "terraform-aws-modules/vpn-gateway/aws"
-  version = "~> 2.0"
+  version = "~> 3.0"
 
   vpn_gateway_id      = module.vpc.vgw_id
   customer_gateway_id = module.cgw.ids[0]
@@ -57,7 +56,7 @@ module "vpn_gateway_1" {
 
 module "vpn_gateway_2" {
   source  = "terraform-aws-modules/vpn-gateway/aws"
-  version = "~> 2.0"
+  version = "~> 3.0"
 
   vpn_gateway_id      = module.vpc.vgw_id
   customer_gateway_id = module.cgw.ids[1]

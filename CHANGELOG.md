@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.1.0](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/compare/v3.0.1...v3.1.0) (2025-03-05)
+
+
+### Features
+
+* Adjust optional params for the aws_customer_gateway, add device_name and certificate_arn ([#23](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/issues/23)) ([2f8bb07](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/commit/2f8bb07c8d432b3f5a868901b69c2d895de4c3ca))
+
+
+### Bug Fixes
+
+* Update CI workflow versions to latest ([#24](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/issues/24)) ([5b8693c](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/commit/5b8693c347b9debc97fbb19beecdcda6f61fb697))
+
 ## [3.0.1](https://github.com/terraform-aws-modules/terraform-aws-customer-gateway/compare/v3.0.0...v3.0.1) (2024-03-07)
 
 
